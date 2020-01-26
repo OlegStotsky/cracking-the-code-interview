@@ -3,6 +3,10 @@ package com.olegstotsky.chapter2;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 
+/* I actually misunderstood the task
+   and thought that the task was to find k-th order statistic.
+   So correct implementation is in Task2Correct
+ */
 public class Task2 {
     // O(NlogN) time, O(N) memory
     public static int kthOrderStatistic(Node head, int k) {
