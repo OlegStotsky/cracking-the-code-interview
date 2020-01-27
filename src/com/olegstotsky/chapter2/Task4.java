@@ -31,12 +31,16 @@ public class Task4 {
             head = next;
         }
 
+        if (leftHead == null) {
+            return right;
+        }
+
         left.next = right;
         return leftHead;
     }
 
     public static void main(String[] args) {
-        Node n = Utils.genList(5, 4, 4, 3, 3, 2, 1);
+        Node n = Utils.genList(5, 4, 4, 1);
         System.out.println(partition(n, 3).toString());
     }
 }
