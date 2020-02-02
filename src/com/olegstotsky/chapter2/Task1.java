@@ -2,26 +2,6 @@ package com.olegstotsky.chapter2;
 
 import java.util.HashSet;
 
-class Node {
-    public Node next = null;
-    public int num;
-
-    public Node(int num) {
-        this.num = num;
-    }
-
-    @Override
-    public String toString() {
-        String s = "Node{" +
-                "num=" + num +
-                '}';
-        if (next != null) {
-            s += next.toString();
-        }
-        return s;
-    }
-}
-
 public class Task1 {
     //O(N) memory, O(N) time
     public static Node removeDuplicates(Node node) {
