@@ -1,6 +1,6 @@
 package com.olegstotsky.chapter2;
 
-class Node {
+public class Node {
     public Node next = null;
     public int num;
 
